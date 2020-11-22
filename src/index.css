@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main {
+  min-height: 80vh;
+}
+.navbar-brand {
+  border: none;
+}
+.navbar .nav-link {
+  border: none;
+}
+.list-group-item {
+  background: none;
+}
+.form-control {
+  height: calc(1.3em + 1.5rem + 2px);
+}
