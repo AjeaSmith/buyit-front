@@ -1,7 +1,9 @@
 import axios from "axios";
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
-  const res = await axios(`/api/products/${id}`);
+  const res = await axios(
+    `https://buyit-backend-api.herokuapp.com/api/products/${id}`
+  );
   // add cart item to cart state
   dispatch({
     type: "CART_ADD_ITEM",
