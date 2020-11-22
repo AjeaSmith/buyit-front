@@ -12,8 +12,8 @@ const Home = ({ match }) => {
   const { loading, error, products } = productList;
 
   useEffect(() => {
-    dispatch(listProducts(keyword));
-  }, [dispatch, keyword]);
+    dispatch(listProducts());
+  }, [dispatch]);
   return (
     <Fragment>
       <h2>Latest Products</h2>

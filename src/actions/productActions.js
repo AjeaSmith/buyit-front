@@ -1,10 +1,10 @@
 import axios from "axios";
 import { logout } from "./userActions";
-export const listProducts = (keyword = "") => async (dispatch) => {
+export const listProducts = () => async (dispatch) => {
   try {
     dispatch({ type: "PRODUCT_LIST_REQUEST" });
     const res = await axios.get(
-      `https://buyit-backend-api.herokuapp.com/api/products?keyword=${keyword}`
+      `https://buyit-backend-api.herokuapp.com/api/products`
     );
     dispatch({ type: "PRODUCT_LIST_SUCCESS", payload: res.data });
   } catch (error) {
